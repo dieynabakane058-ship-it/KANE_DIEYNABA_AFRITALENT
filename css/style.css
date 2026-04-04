@@ -1,0 +1,39 @@
+body {
+margin:0 ;
+padding: 0;
+font-family: Arial, sans-serif;
+color: black;
+background-color:white;
+}
+<!--googlefont-->
+body{
+font-family: 'poppins' , sans-serif;
+}
+<!--gestion-navbar-->
+.navbar{ padding: 15px;}
+.navbar-brand { font-weight: bold;
+font-size: 30px;
+}
+.nav-link{
+  color:rgb(192, 27, 207) ;
+  font-weight: 700; 
+}
+.nav-link:hover{
+ color: white}; 
+ <!--espace-->  
+section{
+  padding: 40px;  
+}
+<!--gestion-h1-h2-buttom>
+.kane{
+  color:white;  
+}
+button{
+background-color: rgb(10, 3, 41);
+color: aliceblue;
+border: none;
+padding: 10px 20px ;
+}
+.afri{
+    font-family:italic;
+}
