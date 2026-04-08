@@ -10,10 +10,10 @@
 
 
 </head>
-<body>
+<body class="principal">
     <header>
         <div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <!--gestion du menu--> 
         <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -42,99 +42,97 @@
 <li class="nav-item">
 <a class="nav-link mx-2" href="blog.html">Blog</a>
 </li>
-<li class="nav-item">
+</div><li class="nav-item">
 <a class="nav-link mx-2" href="contact.html">Contact</a>
 </li>
 <button class="diey">Nous rejoindre</button>
 <button id="btn" class="btn btn-pink">💡</button>
 </ul>
 </div>
-</div>
 </nav>
 
     </header>
 <!--section hero-->
-<section>
-<div>
+<section  class="hero">
+<div class="hero-text">
     <h1 class="afri">Montrez votre talent.Attirez les meilleurs opportunités </h1>
-    <p>Afritalent permet aux developpeurs , designers et créateur de contenu de valoriser leurs compétences et d'accéder à de nouvelles opportunités</p>
+    <p>Afritalent permet aux developpeurs , designers et créateur de contenu de valoriser leurs compétences <br>et d'accéder à de nouvelles opportunités</p>
 
-<div> 
     <!--bouton cta-->
-    <a href="#"> je suis Freelance</a>
-    <a href="#">je cherche un Freelance</a>
+    <div class="button">
+    <button class="btn1">je suis freelance </button>
+    <button class="btn2">je cherche un freelance</button>
     </div>
-</div>
+    </div>
+   <div class="hero-image"></div>     
+
+
 </section>
 <!--section comment ca marche-->
-<section>
-<div>
-    <h2>Comment ça marche </h2>
-<div>
+<section class="bento-section">
+    <h2 class="titre">Comment ça marche </h2>
+<div class="bento">
 
-<div>
+<div class=" card card1">
+    <img src="images/image17.jpeg" alt="">
 <h3>01.Créez votre profil</h3>
-<img src="images/image17.jpeg" alt="">
 <p> Inscrivez vous et créez un profil en mettant en avant vos compétences,
     expériences et réalisations
 </p>
-
 </div>
-<div>
-    <h3>02.Présentez votre expertise</h3>
+
+<div class=" card card2">
     <img src="images/image15.jpeg" alt="">
-    <p>Ajoutez vos projets , votre porfolio et vos spécialites pour attirer l'attention des recruteurs </p>
-</div>
-<div>
-    <h3>03.Trouvez des missions </h3>
-    <img src="images/image18.jpeg" alt="">
-    <p>cconsultez les offres disponibles et choisissez celle qui correspond à votre profil</p>
-</div>
-<div>
-<h3>04. Travaillez et évoluer </h3>
-<img src="images/image16.jpeg" alt="">
-<p> collaborez avec des clients , gagnez de l'experiences er développez votre réseau </p>
+    <h3>02.Présentez votre expertise</h3>
+     <p>Ajoutez vos projets , votre porfolio et vos spécialites pour attirer l'attention des recruteurs </p>
 </div>
 
+<div class=" card card3">
+     <img src="images/image18.jpeg" alt="">
+    <h3>03.Trouvez des missions </h3>
+     <p>cconsultez les offres disponibles et choisissez celle qui correspond à votre profil</p>
+</div>
+
+<div class=" card card4">
+    <img src="images/image16.jpeg" alt="">
+<h3>04. Travaillez et évoluer </h3>
+<p> collaborez avec des clients , gagnez de l'experiences er développez votre réseau </p>
 </div>
 
 </div>
 
 </section>
 <!--section categories de services -->
-<section>
-<div>
-<div>
- <h2>Categoris de services </h2>
-
-</div>
-<div>
+<section class="service">
+    <h2>Categories de services </h2>
+<div class="dieba">
+<div class="dieba1">
     <h3>Developpement web</h3>
     <img src="images/image7.jpeg" alt="">
     <p>20 freelances disponibles</p>
 </div>
 
-<div>
+<div class="dieba1">
     <h3>Design UI/UX</h3>
     <img src="images/image11.jpeg" alt="">
     <p>15 freelances disponibles</p>
 </div>
-<div>
+<div class="dieba1">
     <h3>Marketing Digital</h3>
     <img src="images/image6.jpeg" alt="">
     <p>50 freelances disponibles</p>
 </div>
-<div>
+<div class="dieba1">
     <h3>Data&AI</h3>
     <img src="images/image5.jpeg" alt="">
     <p>20 freelances disponibles</p>
 </div>
-<div>
+<div class="dieba1">
     <h3>Rédaction Tech</h3>
     <img src="images/image10.jpeg" alt="">
     <p>10 freelances disponibles</p>
 </div>
-<div>
+<div class="dieba1">
     <h3>Dev&cloud</h3>
     <img src="images/image12.jpeg" alt="">
     <p>25 freelances disponibles</p>
@@ -144,53 +142,68 @@
 
 </section>
 <!--section temoignages-->
+
 <section>
-<div>
-   <h2>Temoignages</h2> 
-   <div>
-    <div>
-        <img src="images/image20.jpeg" alt="">
-        <p>"une bonne solution pour collaborer avec des freelances de hautes qualités "</p>
-       <img src="images/image1.jpeg " alt=""> 
-        <h4>Cheikh Oumar</h4>
+<h2 class="temoignage">Temoignages</h2>
+
+  <div id="carouselExample" class="carousel slide container my-5" data-bs-ride="carousel">
+
+    <div class="carousel-inner text-center">
+        <!--temoignage1-->
+        <div class="carousel-item active">
+        <img src="images/image1.jpeg" class="d-block mx-auto mb-3" width="120" alt="">
+        <div class="mb-2">
+            ⭐⭐⭐⭐
+        </div>
+        <p>"une bonne solution pour collaborer avec des freelances de hautes qualités</p>
+        <h4>Cheikh oumar</h4>
         <span>Entrepreneur</span>
-
     </div>
-<div>
-  <img src="images/image21.jpeg" alt="">
-        <p>"J'ai beaucoup gagné en experiences grace à Afritalent"</p>
-       <img src="images/image24.jpeg " alt=""> 
-        <h4>Serigne Samba</h4>
-        <span>Developpeur web</span>
-
-   </div>
-
-<div>
-  <img src="images/image22.jpeg" alt="">
-        <p>" j'ai Trouvé plusieurs missions en peu de temps"</p>
-       <img src="images/image3.jpeg " alt=""> 
-        <h4>Mame Bigué</h4>
-        <span>Webmarketeuse </span>
-
-   </div>
-
-   <div>
-  <img src="images/image19.jpeg" alt="">
-        <p>"cette plateforme est interesante"</p>
-       <img src="images/image2.jpeg " alt=""> 
-        <h4>Seynabou</h4>
-        <sapn>rédactrice tech</span>
-
-   </div>
+    <!--temoignage2-->
+    <div class="carousel-item">
+<img src="images/image24.jpeg"  class="d-block mx-auto mb-3" width="120" alt="" >
+<div class="mb-2">
+    ⭐⭐⭐⭐⭐
 </div>
- </div>   
-</section>
+<p>j'ai beaucoup gagné en expériences grace à Afritalent</p>
+<h4>Serigne samba</h4>
+<span>Developpeur web</span>
+    </div>
+    <!--temoignage3-->
+<div class="carousel-item">
+<img src="images/image3.jpeg"  class="d-block mx-auto mb-3" width="120" alt="" >
+<div class="mb-2">
+    ⭐⭐⭐⭐
+</div>
+<p>j'ai trouvé plusieurs missions en peu de temps</p>
+<h4>Mame Bigué</h4>
+<span>Webmarketeuse</span>
+</div>
+<!--temoignages4-->
+<div class="carousel-item">
+<img src="images/image2.jpeg"  class="d-block mx-auto mb-3" width="120" alt="" >
+<div class="mb-2">
+    ⭐⭐⭐⭐
+</div>
+<p>cette plateforme est intéréssante</p>
+<h4>Seynabou</h4>
+<span>Rédactrice Tech</span>
+</div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </div>  
 <!--section appel-->
-<section>
-<div>
+<section class="aw">
+<div class="aw-overlay">
+    <div class="aw-content">
 <h2>Integrez le plateforme dés aujourd 'hui</h2>
 <p>Creez votre profil et commencez à trouvez des missions ou recruteur des talents</p>
-<a href="inscription .html"> s'inscrire</a>
+<a href="inscription .html" class="aw-btn"> s'inscrire</a>
+</div>
 </div>
 </section>
 <!--section hero a faire apres-->
@@ -198,7 +211,6 @@
 
 
 </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
-"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
