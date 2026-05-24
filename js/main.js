@@ -49,4 +49,48 @@ topBtn.addEventListener("click" , () => {
 });
 
 
-console.log("js connect");
+
+/* sélection des compteurs */
+const counters = document.querySelectorAll(".counter");
+const observerCounter = new IntersectionObserver((entries) => {  /*intersectionObserver permet de detecter quand un element apparait a l'ecran*/
+    /*parcourir les elements*/
+ entries.forEach((entry) => {
+if(entry.isIntersecting){
+const counter = entry.target;
+const target = +counter.getAttribute("data-target");/*data-target contient le nbre final a atteindre*/ 
+ let current = 0;
+ const increment = target / 100;
+const updateCounter = () => { /*fonction qui augmente progressivement le nbre*/
+current += increment;
+if(current < target){
+ counter.innerText = Math.ceil(current);/* math.ceil (current) empeche le compteur de recommencer l'animation*/
+setTimeout(updateCounter, 20); /*setTimeout(updateCounter,20) repete l'augmantation toutes les 20milliseconde*/
+ }
+ else{
+counter.innerText = target;
+ }
+};
+ updateCounter();
+ observerCounter.unobserve(counter);/*unobserve(counter) empeche le compteur de recommencer l'animation*/
+ }
+ });
+
+});
+counters.forEach((counter) => {
+ observerCounter.observe(counter);
+});
+
+
+
+/*fade in*/
+const hiddenElements = document.querySelectorAll(".hidden");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) =>{
+        if(entry.isIntersecting){ /*verifie si l'element apparait a l'ecran*/
+            entry.target.classList.add("show");/*ajoute la classe show pour declencher l'animation css*/
+        }
+    });
+});
+/*pour chaque elemen ".hidden"*/
+/*on demande a l'observer de le surveiler*/
+hiddenElements.forEach((el) =>observer.observe(el));
