@@ -52,52 +52,56 @@
     </header>
 
 
-<main>
-  <h1>contacts</h1>
-  <!--formulaire--><li class="nav-item">
-<a class="nav-link mx-2" href="contact.html">Contact</a>
-</li>
-
-<button class="diey">Nous rejoindre</button>
-<button id="btn" class="btn btn-pink">💡</button>
-
-</ul>
-  <section>
-    <form>
+<main class="contact-section">
+<h2>contacts</h2>
+<section>
+  <form id="contactForm" class="contact-form">
+  <!--formulaire-->
 <label> NOM:</label>
-<input type="text">
+<input type="text" id="nom">
+<small class="error" id="nomError"></small>
 
 <label>EMAIL:</label>
-<input type="email">
+<input type="email" id="email">
+<small class="error" id="emailError"></small>
 
-<label SUJET:></label>
-<select>
+ <label SUJET:></label>
+ <select id="sujet">
+  <option value=""> Choisir un sujet</option>
   <option>Information</option>
   <option>Support</option>
 </select>
+<small class="error" id="sujet"></small>
+
 
 <label>Message</label>
-<textarea></textarea>
+<textarea id="message" placeholder="votre message"></textarea>
+<small class="error" id="messageError"></small>
 <button type="submit">ENVOYER</button>
+<p id="successMessage"></p>
     </form>
-  </section>
+</section>
 
 <!--infos-->
 
-<section>
+<section class="contact-info">
   <h2>Informations</h2>
-  <p>Email : contact@afritalent.com</p>
-  <p>Téléphone : +221 77 632 41 39</p>
+   <div class="info-box">
+    <h3>Email</h3>
+  <p> contact@afritalent.com</p>
+  </div>
+  <div class="info-box">
+    <h3>Téléphone</h3>
+  <p>  +221 77 632 41 39</p>
+  </div>
 </section>
 
-<section
-
-><h2>Localisation</h2>
+<section class="info-box">
+<h2>Localisation</h2>
 <iframe src ="https://maps.google.com/maps?q=dakar&output=embed" 
 width="300"
  height="200">
 </iframe>
-
 </section>
 
 </main>
