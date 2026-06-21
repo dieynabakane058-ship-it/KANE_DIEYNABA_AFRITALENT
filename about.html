@@ -1,218 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins&family=Roboto&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
 
 
 <body class="ab">
 
-   <header>
-        <div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <!--gestion du menu-->
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/image8.jpeg" alt="logo" width="80" class="me-2">
+            <h1>AFRITALENT</h1>
+          </a>
+          <!--bouton mobile-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--menu de nav-->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="freelances.html">Freelances</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="tarifs.html">Tarifs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="contact.html">Contact</a>
+              </li>
+             <li> <button class="diey">Nous rejoindre</button></li>
+             <li> <button id="btn" class="btn btn-pink">💡</button></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </header>
+
+  <section class="notrehistoire hidden">
     <div class="container">
-        <!--gestion du menu--> 
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="images/image8.jpeg" alt="logo" width="80" class="me-2">
-        <h2>AFRITALENT</h2>
-        </a>
-        <!--bouton mobile-->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-<span class="navbar-toggler-icon"></span>
-    </button>
-    <!--menu de nav-->
-    <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto">
-  <li class="nav-item">
-    <a class="nav-link mx-2" href="index.html">Accueil</a>
-    </li>
-<li class="nav-item">
-<a class="nav-link mx-2" href="freelances.html">Freelances</a>
-</li>
-<li class="nav-item">
-<a class="nav-link mx-2" href="tarifs.html">Tarifs</a>
-</li>
-<li class="nav-item">
-<a class="nav-link mx-2" href="about.html">About</a>
-</li>
-<li class="nav-item">
-<a class="nav-link mx-2" href="blog.html">Blog</a>
-</li>
-<li class="nav-item">
-<a class="nav-link mx-2" href="contact.html">Contact</a>
-</li>
-<button class="diey">Nous rejoindre</button>
-<button id="btn" class="btn btn-pink">💡</button>
-</ul>
-</div>
-</div>
-</nav>
+      <div class="text-content">
+        <h2 class="ad">Notre histoire</h2>
+        <div class="image-content">
+          <img src="images/image69.jpeg" width="500" alt="photo">
+        </div>
+        <p>Afritalent est une platforme créée en 2020 dans le but de faciliter la mise en relation entre
+          les freelances africains et les entreprises à la recherche de talents .
+          face à la croissance du marche du freelance , il devenait nécessaire de proposer une platforme simple ,
+          accessible et éfficace .
+        </p>
 
-    </header>
-
-<section class="notrehistoire hidden">
-  <div class="container">
-    <div class="text-content">
-  <h2 class="ad">Notre histoire</h2>
-  <div image-content>
-  <img src="images/image69.jpeg" width="500px" >
-  </div>
-  <p>Afritalent est une platforme créée en 2020 dans le but de faciliter la mise en relation entre 
-    les freelances africains et les entreprises à la recherche de talents .
-  face à la croissance du marche du freelance , il devenait nécessaire de proposer une platforme simple , accessible et éfficace .
-  </p>
-
-  <p>le projet est né de la volonter de valoriser les compétances locales et de donner plus de visiblité aux developppeur,designer et 
-    créateur de contenue . Afritalent permet ainsi aux freelances de présenter leurs experiences et de trouver des opportunités 
-    adaptées à leur profil .
-  </p>
-  <p>Aujourd'hui , la platforme continue d'évoluer pour répondre  aux besoins 
-    des utilisateurs et accompagner les proffessionels dans leur parcours.
-  </p>
-  </div>
-  </div>
+        <p>le projet est né de la volonter de valoriser les compétances locales et de donner plus de visiblité aux
+          developppeur,designer et
+          créateur de contenue . Afritalent permet ainsi aux freelances de présenter leurs experiences et de trouver des
+          opportunités
+          adaptées à leur profil .
+        </p>
+        <p>Aujourd'hui , la platforme continue d'évoluer pour répondre aux besoins
+          des utilisateurs et accompagner les proffessionels dans leur parcours.
+        </p>
+      </div>
+    </div>
   </section>
 
 
 
-<!--equipes-->
+  <!--equipes-->
 
-<section class="equipes hidden" >
-  
-  <h2 class="ad">Notre Equipes</h2>
-  <div class="equipe-grid">
-    <div class="carte-m">
-<img src="images/image45.jpeg" alt="">
-<h3>Monsieur KIYOTAKA</h3>
-<p class="poste">Chef d'équipe</p>
-<div class="lien-sociaux">
-<a href="https://linkedin.com">LinkedIn</a></div>
-</div>
+  <section class="equipes hidden">
+
+    <h2 class="ad">Notre Equipes</h2>
+    <div class="equipe-grid">
+      <div class="carte-m">
+        <img src="images/image45.jpeg" alt="photo">
+        <h3>Monsieur KIYOTAKA</h3>
+        <p class="poste">Chef d'équipe</p>
+        <div class="lien-sociaux">
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
 
 
- <div class="carte-m" >
-<img src="images/image38.jpeg" alt="">
-<h3>Monsieur AW</h3>
-<p  class="poste">développpeur</p>
-<div class="lien-sociaux" >
-<a href="https://linkedin.com">LinkedIn</a></div>
+      <div class="carte-m">
+        <img src="images/image38.jpeg" alt="photo">
+        <h3>Monsieur AW</h3>
+        <p class="poste">développpeur</p>
+        <div class="lien-sociaux">
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+
+
+      <div class="carte-m">
+        <img src="images/image43.jpeg" alt="photo">
+        <h3>Madame MIKASA</h3>
+        <p class="poste">Designer</p>
+        <div class="lien-sociaux">
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="carte-m">
+        <img src="images/image40.jpeg" alt="photo">
+        <h3>Monsieur YAGAMI</h3>
+        <p class="poste">développpeur</p>
+        <div class="lien-sociaux">
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="carte-m">
+        <img src="images/image44.jpeg" alt="photo">
+        <h3>Madame KANE</h3>
+        <p class="poste"> créatrice de contenue</p>
+        <div class="lien-sociaux">
+          <a href="https://instagram.com">Instagram</a>
+        </div>
+      </div>
+
+      <div class="carte-m">
+        <img src="images/image42.jpeg" alt="photo">
+        <h3>Monsieur ARMIN</h3>
+        <p class="poste">Rédacteur Tech</p>
+        <div class="lien-sociaux">
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
+
+
+      <div class="carte-m">
+        <img src="images/image41.jpeg" alt="phot">
+        <h3>Madame HINATA</h3>
+        <p class="poste">Rédactrice Tech</p>
+        <div class="lien-sociaux">
+          <a href="https://linkedin.com">LinkedIn</a>
+        </div>
+      </div>
     </div>
 
 
-    <div class="carte-m">
-<img src="images/image43.jpeg" alt="">
-<h3>Madame MIKASA</h3>
-<p  class="poste">Designer</p>
-<div  class="lien-sociaux">
-<a href="https://linkedin.com">LinkedIn</a></div>
-</div>
+  </section>
 
-    <div class="carte-m" >
-<img src="images/image40.jpeg" alt="">
-<h3>Monsieur YAGAMI</h3>
-<p class="poste">développpeur</p>
-<div class="lien-sociaux" >
-<a href="https://linkedin.com">LinkedIn</a></div>
-</div>
+  <section class="nosvaleurs hidden">
 
- <div  class="carte-m">
-<img src="images/image44.jpeg" alt="">
-<h3>Madame KANE</h3>
-<p class="poste"> créatrice de contenue</p>
-<div  class="lien-sociaux">
-<a href="https://instagram.com">Instagram</a></div>
-</div>
+    <h2 class="ad">Nos valeurs</h2>
+    <div class="valeurs-container">
+      <div class="valeurs-carte">
+        <img src="images/image50.jpeg" alt="photo">
+        <h3>Innovations</h3>
+        <p>Nous encourageons la créativite et le developpement de nouvelles idées </p>
+      </div>
 
- <div class="carte-m">
-<img src="images/image42.jpeg" alt="">
-<h3>Monsieur ARMIN</h3>
-<p class="poste">Rédacteur Tech</p>
-<div  class="lien-sociaux" >
-<a href="https://linkedin.com">LinkedIn</a>
-</div>
-</div>
+      <div class="valeurs-carte">
+        <img src="images/image49.jpeg" alt="photo">
+        <h3>Accessibilité</h3>
+        <p>Notre platforme est simple à utiliser et accessible à tous </p>
+      </div>
 
 
- <div class="carte-m">
-<img src="images/image41.jpeg" alt="">
-<h3>Madame HINATA</h3>
-<p class="poste">Rédactrice Tech</p>
-<div  class="lien-sociaux" >
-<a href="https://linkedin.com">LinkedIn</a></div>
-</div>
-  </div>
+      <div class="valeurs-carte">
+        <img src="images/image48.jpeg" alt="photo">
+        <h3>Communauté</h3>
+        <p>Nous favorisons la collaboration entre freelances et Entreprise </p>
+      </div>
 
-
-</section>
-
-<section class="nosvaleurs hidden">
-  
-  <h2 class="ad">Nos valeurs</h2>
-  <div class="valeurs-container">
-    <div class="valeurs-carte">
-    <img src="images/image50.jpeg" alt="">
-      <h3>Innovations</h3>
-      <p>Nous encourageons la créativite et le developpement de nouvelles idées </p>
+      <div class="valeurs-carte">
+        <img src="images/image46.jpeg" alt="photo">
+        <h3>Excellence</h3>
+        <p>Nous vivons la qualité dans tous les services proposés </p>
+      </div>
     </div>
+    
+  </section>
 
-<div class="valeurs-carte">
-     <img src="images/image49.jpeg" alt=""> 
-      <h3>Accessibilité</h3>
-      <p>Notre platforme est simple à utiliser et accessible à tous </p>
+
+  <!--chiffres cles javascript-->
+  <section class="chiffres hidden">
+    <h2 class="titre">Nos chiffres</h2>
+    <div class="bento-stats">
+      <div class="box grande">
+        <h2 class="counter" data-target="2000">0</h2>
+        <p>Freelances actifs</p>
+      </div>
+      <div class="box">
+        <h2 class="counter" data-target="200">0</h2>
+        <p>Entreprises partenaires</p>
+      </div>
+      <div class="box">
+        <h2 class="counter" data-target="5000">0</h2>
+        <p>clients satisfaits</p>
+      </div>
+      <div class="box largeur">
+        <h2 class="counter" data-target="6000">0</h2>
+        <p>projets realises avec succes</p>
+      </div>
     </div>
+  </section>
 
-
-<div class="valeurs-carte">
-      <img src="images/image48.jpeg" alt="">
-      <h3>Communauté</h3>
-      <p>Nous favorisons la collaboration entre freelances et Entreprise </p>
-    </div>
-
-<div class="valeurs-carte">
-      <img src="images/image46.jpeg" alt="">
-      <h3>Excellence</h3>
-      <p>Nous vivons la qualité dans tous les services proposés </p>
-    </div>
-</div>
-  </div>
-</section>
-
-
-<!--chiffres cles javascript-->
-<section class="chiffres hidden">
-  <h2 class="titre">Nos chiffres</h2>
-  <div class="bento-stats">
-    <div class="box grande">
-      <h2 class="counter" data-target= "2000">0</h2>
-      <p>Freelances actifs</p>
-    </div>
-    <div class="box">
-      <h2 class="counter" data-target= "200">0</h2>
-      <p>Entreprises partenaires</p>
-    </div>
-    <div class="box">
-      <h2 class="counter" data-target= "5000">0</h2>
-      <p>clients satisfaits</p>
-    </div>
-    <div class="box largeur">
-      <h2 class="counter" data-target= "6000">0</h2>
-      <p>projets realises avec succes</p>
-    </div>
-  </div>
-</section>
-
-<button id="topBtn">Retour en haut</button>
-<script src="js/main.js"></script>
+  <button id="topBtn">Retour en haut</button>
+  <script src="js/main.js"></script>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
 "></script>
 
 </body>
+
 </html>
